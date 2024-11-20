@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Datos de Reserva - Vehículo</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body id="p-reserm2">
+    <div class="formsReservation">
+      <div class="header-oval">
+        <h2>Parking los Capuchinos</h2>
+        <h1>Datos Reserva</h1>
+      </div>
+
+      <div class="vehicle-section">
+        <div class="vehicle-header">Datos del Vehículo</div>
+
+        <div class="vehicle-box">
+          <img src="images/icons/car.png" alt="Car" class="icon" />
+          <select id="carSelect">
+            <option value="">Seleccionar Vehículo</option>
+            <!-- <option value="Fiat Cronos M.2022">Fiat Cronos M.2022</option> -->
+          </select>
+        </div>
+
+        <div class="vehicle-box">
+          <img src="images/icons/moto.png" alt="Car" class="icon" />
+          <select id="motorcycleSelect">
+            <option value="">Seleccionar Vehículo</option>
+            <!-- <option value="Honda BIZ 125">Honda BIZ 125</option> -->
+          </select>
+        </div>
+
+        <button class="add-vehicle">
+          <span class="add-icon">+</span> Agregar Vehículo
+        </button>
+      </div>
+
+      <a class="Continue_button" href="frmReservas_M4.html">Continuar</a>
+      <!-- <button class="Continue_button">Continuar</button> -->
+
+      <!-- Contenedor para los detalles del vehículo -->
+      <div id="vehicleDetails" class="vehicle-details"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

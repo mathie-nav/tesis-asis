@@ -1,0 +1,21 @@
+{
+  "name": "tesis-as",
+  "version": "1.0.0",
+  "description": "Proyecto de tesis para estacionamiento hotel capuchinos",
+  "main": "index.mjs",
+  "scripts": {
+    "dev": "nodemon index.mjs"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "^1.4.7",
+    "express": "^4.21.1",
+    "helmet": "^8.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "pg": "^8.13.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
+}

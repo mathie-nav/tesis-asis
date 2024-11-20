@@ -1,0 +1,521 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+        background-image: url('images/parkingLot.jpg'); /* Cambia esto a la ruta de tu imagen */
+        background-size: cover; /* Asegura que la imagen cubra toda el área */
+        background-attachment: fixed; /* Fija la imagen al fondo */
+        background-repeat: no-repeat; /* Evita que la imagen se repita */
+        background-position: center; /* Centra la imagen */
+        margin: 0;
+        transition: opacity 0.5s ease-in-out;
+}
+
+.mensaje-inicio{
+    color: #d3d3d3;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    text-align: center;
+    padding: 20px;
+}
+
+header {
+    background-color: #5C5FCA;
+    border-radius: 20px;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.bienvenido {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.usuario {
+    color: #fff;
+    font-size: 16px;
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mensaje {
+    font-size: 14px;
+    color: #000000;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.slider-indicators {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Espacio entre los puntos */
+    margin-top: 20px;
+}
+
+.circle {
+    width: 10px;
+    height: 10px;
+    background-color: #000000;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+.image-container {
+    width: 500px;
+    height: 300px;
+    background-color: #000000c5;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle-menus-display{
+    width: 15px;
+    height: 15px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+.nueva-reserva {
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 0px;
+}
+
+
+footer {
+    margin-top: 0%;
+    margin-bottom: 20px;
+}
+
+.plus-button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.reserva-button {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000; /* Color del texto */
+    border: none;
+    border-radius: 25px; /* Bordes redondeados */
+    padding: 10px 20px; /* Relleno interno del botón */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.reserva-button:hover {
+    transform: translateY(-2px); /* Mueve ligeramente el botón hacia arriba al hacer hover */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); /* Sombra más intensa al hacer hover */
+
+}
+
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    /* Establecer el tamaño máximo del contenedor para que la imagen no se agrande demasiado */
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;  /* Mantener la proporción de la imagen */
+    border-radius: 10px;  /* Añadir bordes redondeados si quieres */
+    object-fit: contain;  /* Asegura que la imagen se ajuste dentro del contenedor */
+}
+
+.circle.active {
+    background-color: #666; /* Color más oscuro para el punto activo */
+}
+
+.menu-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    background-color: #d3d3d3;
+    border-radius: 20px;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    background-color: #8a87f4; /* Color morado */
+    border-radius: 15px;
+    transition: transform 0.2s ease;
+}
+
+.menu-item:hover {
+    transform: scale(1.1); /* Efecto de agrandamiento al pasar el cursor */
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+}
+
+.header-oval {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    padding: 20px;
+    background-color: #8b87f47a;
+    color: white;
+    border-radius: 50px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.header-oval h2 {
+    font-size: 18px;
+    margin: 0;
+}
+
+.header-oval h1 {
+    font-size: 24px;
+    margin: 5px 0 0 0;
+}
+
+.reservation-container {
+    /* margin-top: 20px; */
+    display: grid;
+    align-items: center;
+    gap: 15px;
+    background-color: #5c60ca80;
+    padding: 20px;
+    border-radius: 50px;
+}
+
+.autentication{
+    background-color: #5C5FCA;
+    display: grid;
+    border-radius: 50px;
+    padding: 10px;
+}
+
+.frmRegistro{
+    height: 30%;
+    width:30%;
+    display: grid;
+    align-items: center;
+    gap: 15px;
+    background-color: #5c60ca80;
+    padding: 20px;
+    border-radius: 50px;
+}
+
+.reservation-vehicles-photo {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    background-color: #5c60ca80;
+    padding: 20px;
+    border-radius: 50px;
+}
+
+.input-oval {
+    background-color: #d3d3d3;
+    border-radius: 50px;
+    padding: 10px 20px;
+    width: 300px;
+}
+
+.input-oval input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 16px;
+    color: #333;
+}
+
+
+.formsReservation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    zoom: 150%;
+    text-align: center;
+}
+
+.Continue_button {
+    margin-top: 30px;
+    background-color: #462fac;
+    border-radius: 50px;
+    padding: 10px 20px;
+    width: 300px;
+    color: #d3d3d3;
+    
+}
+
+.titleBox{
+    color:  #3a3a3a;
+    font-size: small;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+.hidden{
+    opacity: 0;
+    pointer-events: none;
+}
+
+.fade-in {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.testingSlideAnimation{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.SecondMenuTestingAnimation{
+    opacity: 0;
+    pointer-events: auto;
+}
+
+.side-Car{
+    height: auto;
+    margin-right: 40px; 
+    max-width: 70px;
+}
+
+.carToRight{
+    grid-template-columns: auto;
+}
+
+.car-photo{
+    display: flex;
+    height: 270px;
+    max-width: 70px;
+    margin-right: 100px;
+}
+.car-data{
+    display: grid;
+    gap: 1%;
+}
+
+
+/*  CALENDAR STYLES  */
+.multi-day-option {
+    display: flex;
+    justify-content: space-between;
+   background-color: #5c60ca4f;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 15px 0;
+    color: rgb(255, 255, 255);
+}
+
+.toggle-btn, .close-btn {
+    background-color: #4a4a4a;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.date-selector {
+    background-color: #6363b1;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.calendar {
+    margin-top: 10px;
+    background-color: #e0e0e0;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    color: #4a4a4a;
+    font-weight: bold;
+}
+
+.calendar table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.calendar th, .calendar td {
+    padding: 5px;
+    text-align: center;
+    color: black;
+}
+
+.hours-per-day {
+    margin: 15px 0;
+}
+
+.hours-per-day label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+
+/* VEHICLE SELECTION STYLES */
+
+
+.vehicle-section{
+    background-color: #5c60ca70;
+    padding: 15px;
+    border-radius: 15px;
+    position: relative;
+}
+
+.vehicle-header{
+    font-size: 1.2em;
+    text-align: center;
+    color: #c3c9e8;
+    margin-bottom: 15px;
+}
+
+.vehicle-box {
+    display: flex;
+    align-items: center;
+    background-color: #646fa1;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.vehicle-icon {
+    font-size: 1.5em;
+    margin-right: 10px;
+}
+
+.add-vehicle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #c3c9e8;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    color: #3a4a6b;
+    font-weight: bold;
+    margin: 15px 0;
+    cursor: pointer;
+}
+
+.add-icon {
+    font-size: 1.2em;
+    margin-right: 5px;
+    align-items: center;
+}
+
+/* PARKING SPOT SELECTION STYLES */
+
+.parking-container {
+    zoom: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: fit-content;
+    background-color: #00000073;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.parking-row {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.parking-space {
+    width: 80px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.parking-space.available {
+    background-color: #7376d5ac; 
+}
+
+.parking-space.occupied {
+    background-color:#7376d5ac; 
+
+}
+
+.parking-space.reserved {
+    background-color:#7376d5ac; 
+}
+
+.ParkingFormat{
+    max-height: 10px;
+
+}
+
+.lugar-disponible{
+    font-size: medium;
+    color: #e0e0e0;
+}
+
+.lugar-disponible-container{
+    background-color: #5c60ca56;
+    border-radius: 20px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.parking-space:hover{
+    background-color: #2a163e;
+}
+
+   

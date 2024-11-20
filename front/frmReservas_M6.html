@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detalles de Reserva</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body id="p-reserm6">
+    <div class="formsReservation">
+      <div class="header-oval">
+        <h1>Parking los Capuchinos</h1>
+        <h2>Datos Reserva</h2>
+      </div>
+
+      <div class="reservation-container">
+        <div class="header-bar">
+          <span>DATOS DE SU RESERVA</span>
+          <button class="close-button">✕</button>
+        </div>
+
+        <div class="content">
+          <div class="section">
+            <h3>Vehículo</h3>
+            <div class="vehicle-info">
+              <img clas="" src="" alt="" />
+              <img src="images/icons/car.png" alt="Car" class="icon" />
+              <div class="vehicle-details">
+                <p id="vehiculoTicket" class="vehicle-name">Fiat Cronos M.2022</p>
+                <p>Vehículo Personal</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="detalles-ticket">
+            <h3>Detalles Ticket</h3>
+            <p >Fecha: <span id="fechareserva" class="date"></span></p>
+            <p >Horas por día: <span id="horasreserva" class="hours"></span></p>
+            <p>Lugar: <span id="lugarreserva" class="place"></span></p>
+            <!-- <h3 class="valor-seña">Valor Total de Señal:</h3>
+            <p id="preciototal" class="total-price"></p> -->
+          </div>
+        </div>
+        <!-- <a id="btnReservar" class="Continue_button" href="">RESERVAR</a> -->
+        <button id="reservar2" onclick="pruebaApi()" class="Continue_button">RESERVAR</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

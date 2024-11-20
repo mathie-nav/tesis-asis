@@ -1,0 +1,8 @@
+Endpoint: localhost:3000/api/v1/login
+
+Body:
+
+{
+    "dni": "34908046",
+    "clave": "admin"
+}

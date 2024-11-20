@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página de Bienvenida</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Pantalla de Bienvenida -->
+    <div class="container screen active" id="welcome-screen">
+      <header>
+        <h1 class="bienvenido">PARKING LOS CAPUCHINOS</h1>
+        <p class="mensaje">
+          Desde esta app puedes manejar tu estadía en el Parking LOS CAPUCHINOS
+        </p>
+        <p class="mensaje-inicio">Ingrese sus datos para iniciar</p>
+      </header>
+      <main>
+        <div class="autentication">
+          <form action="/autenticacion" method="post">
+            <label for="dni">DNI:</label>
+            <input type="text" id="dni" name="dni" />
+            <label for="clave">Contraseña:</label>
+            <input type="password" id="clave" name="clave" />
+            
+            <button type="submit" class="reserva-button" id="">
+              Iniciar Sesión
+            </button>
+
+            <!-- <button type="submit">Iniciar Sesion</button> -->
+            <!-- <button type="button" class="reserva-button" id="start-session">Iniciar Sesión</button> -->
+             
+          </form>
+        </div>
+        <div class="image-container">
+          <img src="images/manwithcup.png" alt="Imagen" />
+        </div>
+      </main>
+    </div>
+    <!-- <script src="script.js" defer></script> -->
+  </body>
+</html>

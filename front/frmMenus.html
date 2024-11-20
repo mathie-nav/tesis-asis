@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body id="p-menus">
+     <!-- Pantalla de Bienvenida -->
+     <div class="container screen active" id="welcome-screen">
+        <div class="menu-container">
+            <div class="menu-item">
+                <img src="images/icons/car.png" alt="Car" class="icon">
+            </div>
+            <div class="menu-item">
+                <img src="images/icons/wallet.png" alt="Wallet" class="icon">
+            </div>
+            <div class="menu-item">
+                <a href="frmReservas_M1.html">
+                <!-- <img onclick="cargarReservas()" src="images/icons/calendar.png" alt="Calendar" class="icon"> -->
+                <img src="images/icons/calendar.png" alt="Calendar" class="icon">
+                </a>
+            </div>
+            <div class="menu-item">
+                <img src="images/icons/car.png" alt="Location" class="icon">
+            </div>
+            <div class="menu-item">
+                <img src="images/icons/user.png" alt="Profile" class="icon">
+            </div>
+        </div>
+
+        <div class="slider-indicators">
+                <button onclick="getLanding()" class="circle-menus-display" id="circle-menu-dash-derecha"></button>
+                <button class="circle-menus-display" id="circle-menu-dash-izquierda"></button>
+        </div>
+
+        <main>
+            <div class="image-container">
+                <img src="images/guystanding.png" alt="Imagen">
+            </div>
+            <!-- <button class="reserva-button">NUEVA RESERVA</button> -->
+            <a href="frmReservas_M1.html" class="reserva-button">NUEVA RESERVA</a>
+        </main>
+
+        <footer>
+            
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

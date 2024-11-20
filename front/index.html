@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página de Bienvenida</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body id="p-inicio">
+    <div class="container screen active" id="welcome-screen">
+      <header>
+        <h1 class="bienvenido">BIENVENIDO</h1>
+        <p id="welcome-message-name-display">Hola Crack</p>
+        <p class="mensaje">
+          Desde esta app puedes manejar tu estadía en el Parking LOS CAPUCHINOS
+        </p>
+      </header>
+
+      <div class="slider-indicators">
+        <a
+          href="index.html"
+          class="circle-menus-display"
+          id="circle-menu-dash-derecha"
+        ></a>
+        <!-- <button class="circle-menus-display" id="circle-menu-dash-derecha"></button> -->
+        <!-- <button onclick="getMenus()" class="circle-menus-display" id="circle-menu-dash-izquierda"></button> -->
+        <a
+          href="frmMenus.html"
+          class="circle-menus-display"
+          id="circle-menu-dash-izquierda"
+        ></a>
+      </div>
+
+      <main>
+        <div class="image-container">
+          <img src="images/manwithcup.png" alt="Imagen" />
+        </div>
+        <!-- <button class="reserva-button" onclick="window.location.href='frmReservas_M1.html'">NUEVA RESERVA</button> -->
+         <a class="reserva-button" href="frmReservas_M1.html">NUEVA RESERVA</a>
+      </main>
+
+      <footer></footer>
+    </div>
+    <script src="script.js" defer></script>
+  </body>
+</html>

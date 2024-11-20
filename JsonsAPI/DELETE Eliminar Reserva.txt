@@ -1,0 +1,3 @@
+Endpoint: localhost:3000/api/v1/reservas/:id
+
+Parametro: id (IdReserva : Numerico)

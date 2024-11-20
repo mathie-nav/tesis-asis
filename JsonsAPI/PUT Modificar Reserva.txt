@@ -1,0 +1,15 @@
+Endpoint: localhost:3000/api/v1/reservas/:id 
+
+Parametro: id (IdReserva : Numerico)
+
+Body:
+{
+    "FechaHora": "2024-11-30",
+    "HorasReservadas": 15,
+    "idCliente": 3,
+    "idVehiculo": 3,
+    "DuracionReserva": 455,
+    "idTipoReserva": 1,
+    "Estado": true,
+    "idLugarReservado": 1
+}
